@@ -40,6 +40,7 @@ const Register = () => {
       if (!res.ok) alert(result.message);
 
       dispatch({ type: "REGISTER_SUCCESS" });
+      alert("Bạn đã đăng tài khoản thành công");
       navigate("/login");
     } catch (error) {
       alert(error.message);
@@ -60,14 +61,14 @@ const Register = () => {
                 <div className="user">
                   <img src={userIcon} alt="" />
                 </div>
-                <h2>Register</h2>
+                <h2>Đăng Ký</h2>
 
                 <Form onSubmit={handleClick}>
                   <FormGroup>
                     <input
                       id="username"
                       type="text"
-                      placeholder="Username"
+                      placeholder="Vui lòng nhập họ tên"
                       required
                       onChange={handleChange}
                     />
@@ -76,7 +77,7 @@ const Register = () => {
                     <input
                       id="email"
                       type="email"
-                      placeholder="Email"
+                      placeholder="Vui lòng nhập Email"
                       required
                       onChange={handleChange}
                     />
@@ -85,7 +86,7 @@ const Register = () => {
                     <input
                       id="password"
                       type="password"
-                      placeholder="Password"
+                      placeholder="Vui lòng nhập mật khẩu"
                       required
                       onChange={handleChange}
                     />
@@ -94,12 +95,12 @@ const Register = () => {
                     className="btn secondary__btn auth__btn"
                     type="submit"
                   >
-                    Create Account
+                    Đăng Ký
                   </Button>
                 </Form>
 
                 <p>
-                  Already have an account? <Link to="/login">Login</Link>
+                  Bạn đã có tài khoản? <Link to="/login">Đăng Nhập</Link>
                 </p>
               </div>
             </div>

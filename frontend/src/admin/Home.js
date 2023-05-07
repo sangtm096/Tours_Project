@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import CommonSection from "../shared/CommonSection";
 
 import "./home.css";
-import SearchBar from "../shared/SearchBar";
 import Newsletter from "../shared/Newsletter";
 
 import useFetch from "../hooks/useFetch";
@@ -41,15 +40,8 @@ const AdminHome = () => {
   return (
     <>
       <CommonSection title={"Ong Sang Tours"} />
-      <section>
-        <Container>
-          <Row>
-            <SearchBar />
-          </Row>
-        </Container>
-      </section>
 
-      <Container>
+      <Container style={{ marginTop: "50px" }}>
         <Row className="d-flex align-items-center justify-content-left">
           <Button className="navbar__admin w-25">
             <Link to="/admin" className="text-white nav__link">

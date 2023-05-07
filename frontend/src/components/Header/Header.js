@@ -10,11 +10,11 @@ import { AuthContext } from "../../context/AuthContext";
 const nav__links = [
   {
     path: "/home",
-    display: "Home",
+    display: "Trang Chủ",
   },
   {
     path: "/about",
-    display: "About",
+    display: "Giới Thiệu",
   },
   {
     path: "/tours",
@@ -22,7 +22,7 @@ const nav__links = [
   },
   {
     path: "/favorites",
-    display: "Favorites",
+    display: "Yêu Thích",
   },
 ];
 
@@ -77,16 +77,16 @@ const Header = () => {
                       {user.username}
                     </h5>
                     <Button className="btn btn-warning" onClick={logout}>
-                      Logout
+                      Đăng Xuất
                     </Button>
                   </>
                 ) : (
                   <>
                     <Button className="btn secondary__btn">
-                      <Link to="/login">Login</Link>
+                      <Link to="/login">Đăng Nhập</Link>
                     </Button>
                     <Button className="btn primary__btn">
-                      <Link to="/register">Register</Link>
+                      <Link to="/register">Đăng Ký</Link>
                     </Button>
                   </>
                 )}

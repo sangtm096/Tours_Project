@@ -45,10 +45,10 @@ const SearchBar = () => {
               <i className="ri-map-pin-line"></i>
             </span>
             <div>
-              <h6>Location</h6>
+              <h6>Địa Điểm</h6>
               <input
                 type="text"
-                placeholder="Where are you going?"
+                placeholder="Nơi mà bạn muốn đến?"
                 ref={locationRef}
               />
             </div>
@@ -58,10 +58,10 @@ const SearchBar = () => {
               <i className="ri-pin-distance-line"></i>
             </span>
             <div>
-              <h6>Distance</h6>
+              <h6>Khoảng Cách</h6>
               <input
                 type="number"
-                placeholder="Distance kilometers"
+                placeholder="Khoảng cách km"
                 ref={distanceRef}
               />
             </div>
@@ -71,7 +71,7 @@ const SearchBar = () => {
               <i className="ri-group-line"></i>
             </span>
             <div>
-              <h6>Maximum People</h6>
+              <h6>Số Người Đi Cùng Bạn</h6>
               <input type="text" placeholder="0" ref={maxGroupSizeRef} />
             </div>
           </FormGroup>

@@ -8,11 +8,11 @@ import logo from "../../assets/images/logo2.png";
 const quick__links = [
   {
     path: "/home",
-    display: "Home",
+    display: "Trang Chủ",
   },
   {
     path: "/about",
-    display: "About",
+    display: "Giới Thiệu",
   },
   {
     path: "/tours",
@@ -22,16 +22,16 @@ const quick__links = [
 
 const quick__links2 = [
   {
-    path: "/gallery",
-    display: "Gallery",
+    path: "/tours",
+    display: "Trải Ngiệm",
   },
   {
     path: "/login",
-    display: "Login",
+    display: "Đăng Nhập",
   },
   {
     path: "/register",
-    display: "Register",
+    display: "Đăng Ký",
   },
 ];
 
@@ -78,7 +78,7 @@ const Footer = () => {
 
           {/* Column 2 */}
           <Col lg="3">
-            <h5 className="footer__link-title">Discover</h5>
+            <h5 className="footer__link-title">Khám Phá</h5>
 
             <ListGroup className="footer__quick-links">
               {quick__links.map((item, index) => (
@@ -104,7 +104,7 @@ const Footer = () => {
 
           {/* Column 4 */}
           <Col lg="3">
-            <h5 className="footer__link-title">Contact</h5>
+            <h5 className="footer__link-title">Liên Hệ</h5>
 
             <ListGroup className="footer__quick-links">
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
@@ -112,7 +112,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-map-pin-fill"></i>
                   </span>
-                  Address:
+                  Địa chỉ:
                 </h6>
 
                 <p className="mb-0">Can Tho, Viet Nam</p>
@@ -132,7 +132,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-smartphone-fill"></i>
                   </span>
-                  Phone:
+                  Điện Thoại:
                 </h6>
 
                 <p className="mb-0">0344574465</p>

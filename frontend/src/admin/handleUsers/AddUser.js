@@ -27,7 +27,6 @@ const AddUser = () => {
       email: email,
       password: password,
     });
-    console.log(response);
     if (response.success) {
       alert(response.message);
     }
@@ -36,6 +35,7 @@ const AddUser = () => {
 
   return (
     <div style={{ marginTop: "100px" }}>
+      <h2 className="text-center">Thêm User</h2>
       <form
         style={{
           margin: "auto",
@@ -49,7 +49,7 @@ const AddUser = () => {
         <input
           type="text"
           id="username"
-          placeholder="Nhap username ..."
+          placeholder="Vui lòng nhập họ tên"
           onChange={(e) => {
             setUsername(e.target.value);
           }}
@@ -59,23 +59,23 @@ const AddUser = () => {
         <input
           type="email"
           id="email"
-          placeholder="Nhap email ..."
+          placeholder="Vui lòng nhập email"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
           value={email}
         />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Mật khẩu</label>
         <input
           type="password"
           id="password"
-          placeholder="Nhap password ..."
+          placeholder="Vui lòng nhập password"
           onChange={(e) => {
             setPassword(e.target.value);
           }}
           value={password}
         />
-        <input type="submit" value="AddUser" />
+        <input type="submit" value="Thêm User" />
       </form>
     </div>
   );

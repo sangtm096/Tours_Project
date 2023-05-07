@@ -20,7 +20,7 @@ const serviceData = [
   {
     imgUrl: customizationImg,
     title: "Customization",
-    desc: "Ngoài ra, chúng tôi sẽ tối ưu chi phí nhưng vẫn mang lại chuyến đi thật tuyệt cho bạn.",
+    desc: "Ngoài ra, chúng tôi sẽ mang lại chuyến đi vừa hợp lý vừa tuyệt vời cho bạn.",
   },
 ];
 const ServiceList = () => {

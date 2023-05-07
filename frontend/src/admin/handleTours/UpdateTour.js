@@ -47,6 +47,7 @@ const UpdateTour = () => {
 
   return (
     <div style={{ marginTop: "100px" }}>
+      <h2 className="text-center">Chỉnh sửa Tour</h2>
       <form
         style={{
           margin: "auto",
@@ -56,78 +57,75 @@ const UpdateTour = () => {
         }}
         onSubmit={handleSubmit}
       >
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Tên tour</label>
         <input
           type="text"
           id="title"
-          placeholder="Nhap title ..."
           onChange={(e) => {
             setTitle(e.target.value);
           }}
           value={title}
         />
-        <label htmlFor="address">Address</label>
+        <label htmlFor="address">Địa điểm</label>
         <input
           type="text"
           id="address"
-          placeholder="Nhap address ..."
           onChange={(e) => {
             setAddress(e.target.value);
           }}
           value={address}
         />
-        <label htmlFor="distance">Distance</label>
+        <label htmlFor="distance">Khoảng cách</label>
         <input
           type="number"
           id="distance"
-          placeholder="Nhap distance ..."
           onChange={(e) => {
             setDistance(e.target.value);
           }}
           value={distance}
         />
-        <label htmlFor="price">Price</label>
+        <label htmlFor="price">Giá tour</label>
         <input
           type="number"
           id="price"
-          placeholder="Nhap price ..."
           onChange={(e) => {
             setPrice(e.target.value);
           }}
           value={price}
         />
-        <label htmlFor="maxGroupSize">MaxGroupSize</label>
+        <label htmlFor="maxGroupSize">Số người tối đa</label>
         <input
           type="number"
           id="maxGroupSize"
-          placeholder="Nhap maxGroupSize ..."
           onChange={(e) => {
             setMaxGroupSize(e.target.value);
           }}
           value={maxGroupSize}
         />
-        <label htmlFor="desc">Description</label>
+        <label htmlFor="desc">Mô tả về tour</label>
         <input
           type="text"
           id="desc"
-          placeholder="Nhap description ..."
           onChange={(e) => {
             setDesc(e.target.value);
           }}
           value={desc}
         />
-        <label htmlFor="photo">Link Anh</label>
+        <label htmlFor="photo">Link Ảnh</label>
         <input
           type="text"
           id="photo"
-          placeholder="Nhap link anh ..."
           onChange={(e) => {
             setPhoto(e.target.value);
           }}
           value={photo}
         />
 
-        <input type="submit" value="Update" />
+        <input
+          type="submit"
+          value="Chỉnh sửa"
+          style={{ fontSize: "24px", padding: "5px" }}
+        />
       </form>
     </div>
   );

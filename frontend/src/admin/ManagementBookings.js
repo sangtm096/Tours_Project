@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Button, Table } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CommonSection from "../shared/CommonSection";
 
 import "./home.css";
-import SearchBar from "../shared/SearchBar";
 import Newsletter from "../shared/Newsletter";
 
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 
 const ManagementBookings = () => {
+  const navigate = useNavigate();
   const { data: bookings, loading, error } = useFetch(`${BASE_URL}/booking`);
   const [bookingsList, setBookingsList] = useState(bookings);
 
@@ -41,15 +41,8 @@ const ManagementBookings = () => {
   return (
     <>
       <CommonSection title={"Ong Sang Tours"} />
-      <section>
-        <Container>
-          <Row>
-            <SearchBar />
-          </Row>
-        </Container>
-      </section>
 
-      <Container>
+      <Container style={{ marginTop: "50px" }}>
         <Row className="d-flex align-items-center justify-content-left">
           <Button className="navbar__admin w-25">
             <Link to="/admin" className="text-white nav__link">
@@ -100,9 +93,22 @@ const ManagementBookings = () => {
                         onClick={() => {
                           deleteBooking(`${booking._id}`);
                         }}
-                        style={{ padding: "3px", color: "red" }}
+                        style={{
+                          padding: "3px",
+                          color: "red",
+                          marginRight: "3px",
+                        }}
                       >
                         <i className="ri-delete-bin-fill"></i>
+                      </button>
+                      <button
+                        onClick={() => {
+                          alert("Tour đã được duyệt");
+                          navigate("/admin/bookings");
+                        }}
+                        style={{ padding: "3px", color: "green" }}
+                      >
+                        <i className="ri-checkbox-fill"></i>
                       </button>
                     </td>
                   </tr>
