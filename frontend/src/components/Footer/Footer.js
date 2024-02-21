@@ -142,7 +142,7 @@ const Footer = () => {
 
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
-              Copyright {year}, Du lịch bốn phương cùng với Ong Sang Tours
+              Tận hưởng năm {year}, Du lịch bốn phương cùng với Ong Sang Tours
             </p>
           </Col>
         </Row>

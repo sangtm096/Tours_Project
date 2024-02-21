@@ -31,6 +31,8 @@
     border: none;
     font-size: 1rem;
     color: var(--heading-color);
+    padding: 8px 20px;
+    margin: 2px 0;
 }
 
 .newsletter__input input:focus {
@@ -39,6 +41,7 @@
 
 .newsletter__btn {
     padding: 0.5rem 1.5rem !important;
+    margin-left: 0.5rem;
     background: var(--secondary-color) !important;
     color: #fff !important;
     font-size: 1.1rem !important;

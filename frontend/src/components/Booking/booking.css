@@ -35,10 +35,14 @@
 
 .booking__form {
     padding-top: 2rem;
+
 }
 
 .booking__form h5 {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .booking__form input {

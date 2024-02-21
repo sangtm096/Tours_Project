@@ -29,7 +29,10 @@ export const verifyUser = (req, res, next) => {
     } else {
       return res
         .status(401)
-        .json({ success: false, message: "You're not user" });
+        .json({
+          success: false,
+          message: "Bạn không phải thành viên, vui lòng đăng ký!",
+        });
     }
   });
 };
@@ -40,7 +43,7 @@ export const verifyAdmin = (req, res, next) => {
     } else {
       return res
         .status(401)
-        .json({ success: false, message: "You're not admin" });
+        .json({ success: false, message: "Bạn không phải admin" });
     }
   });
 };

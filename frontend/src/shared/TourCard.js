@@ -60,7 +60,7 @@ const TourCard = ({ tour }) => {
               <i className="ri-star-fill"></i>{" "}
               {avgRating === 0 ? null : avgRating}
               {totalRating === 0 ? (
-                "Not rated"
+                "Chưa đánh giá"
               ) : (
                 <span> ({reviews.length}) </span>
               )}
@@ -74,7 +74,7 @@ const TourCard = ({ tour }) => {
           <div className="card__bottom d-flex align-items-center justify-content-between mt-3">
             <h5>
               ${price}
-              <span> /per person</span>
+              <span> /1 người</span>
             </h5>
             <button
               className="favorite_btn"

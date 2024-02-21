@@ -19,7 +19,7 @@ const SearchBar = () => {
     const maxGroupSize = maxGroupSizeRef.current.value;
 
     if (location === "" || distance === "" || maxGroupSize === "") {
-      return alert("All fields are required!");
+      return alert("Bạn cần điền đầy đủ thông tin!");
     }
 
     const res = await fetch(

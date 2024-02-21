@@ -45,23 +45,23 @@ const ManagementTours = () => {
         <Row className="d-flex align-items-center justify-content-left">
           <Button className="navbar__admin w-25">
             <Link to="/admin" className="text-white nav__link">
-              Users Management
+              Quản Lý Users
             </Link>
           </Button>
           <Button className="navbar__admin w-25">
             <Link to="/admin/tours" className="text-white nav__link">
-              Tours Management
+              Quản Lý Tours
             </Link>
           </Button>
           <Button className="navbar__admin w-25">
             <Link to="/admin/bookings" className="text-white nav__link">
-              Bookings Management
+              Quản Lý Bookings
             </Link>
           </Button>
         </Row>
         <Button className="navbar__admin-add">
           <Link to="/admin/add-tour" className="text-white nav__link">
-            Add Tour
+            Thêm Tour
           </Link>
         </Button>
       </Container>

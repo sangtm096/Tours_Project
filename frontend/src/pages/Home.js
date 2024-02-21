@@ -44,7 +44,7 @@ const Home = () => {
             </Col>
 
             <Col lg="2">
-              <div className="hero__img-box">
+              <div className="hero__img-box mt-1">
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
@@ -71,7 +71,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5">
-              <Subtitle subtitle={"Explore"} />
+              <Subtitle subtitle={"Khám phá"} />
               <h2 className="featured__tour-title">
                 Tours nổi bật của chúng tôi
               </h2>
@@ -87,8 +87,10 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="3">
-              <h5 className="services__subtitle">What we serve</h5>
-              <h2 className="services__title">We offer our best services</h2>
+              {/* <h5 className="services__subtitle">What we serve</h5> */}
+              <h2 className="services__title">
+                Chúng tôi cung cấp các dịch vụ tốt nhất!
+              </h2>
             </Col>
             <ServiceList />
           </Row>
@@ -104,7 +106,8 @@ const Home = () => {
                 <Subtitle subtitle={"Experience"} />
 
                 <h2>
-                  With our all experience <br /> we will serve you
+                  Với tất cả kinh nghiệm <br /> Chúng tôi sẽ mang đến cho bạn
+                  những chuyến đi hoàn hảo.
                 </h2>
                 <p>
                   Với những kinh nghiệm có được trong suốt những năm vừa qua.
@@ -117,15 +120,15 @@ const Home = () => {
               <div className="counter__wrapper d-flex align-items-center gap-5">
                 <div className="counter__box">
                   <span>9k+</span>
-                  <h6>Successful Trip</h6>
+                  <h6>Chuyến đi thành công</h6>
                 </div>
                 <div className="counter__box">
                   <span>3k+</span>
-                  <h6>Regular clients</h6>
+                  <h6>Khách hàng thân thiết</h6>
                 </div>
                 <div className="counter__box">
                   <span>10+</span>
-                  <h6>Years experience</h6>
+                  <h6>Năm kinh nghiệm</h6>
                 </div>
               </div>
             </Col>
@@ -145,7 +148,9 @@ const Home = () => {
           <Row>
             <Col lg="12">
               <Subtitle subtitle={"Fans Love"} />
-              <h2 className="testimonial__title">What our fans say about us</h2>
+              <h2 className="testimonial__title">
+                Cảm nhận khách hàng về chúng tôi
+              </h2>
             </Col>
             <Col lg="12">
               <Testimonials />

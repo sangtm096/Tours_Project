@@ -71,7 +71,7 @@ const TourDetails = () => {
       }
       // alert("review submitted"); // Cảm ơn bạn đã để lại cảm nhận, hẹn gặp lại bạn trong thời gian sớm nhất!
 
-      alert(result.message);
+      alert("Cảm ơn bạn đã để lại bình luận!");
     } catch (error) {
       alert(error.message);
     }
@@ -106,7 +106,7 @@ const TourDetails = () => {
                         ></i>{" "}
                         {avgRating === 0 ? null : avgRating}
                         {totalRating === 0 ? (
-                          "Not rated"
+                          "Chưa đánh giá"
                         ) : (
                           <span> ({reviews?.length}) </span>
                         )}
@@ -123,23 +123,24 @@ const TourDetails = () => {
                       </span>
                       <span>
                         <i className="ri-money-dollar-circle-line"></i> ${price}
-                        /per person
+                        /1 du khách
                       </span>
                       <span>
                         <i className="ri-pin-distance-line"></i> {distance}
                         k/m
                       </span>
                       <span>
-                        <i className="ri-group-line"></i> {maxGroupSize} people
+                        <i className="ri-group-line"></i> {maxGroupSize} du
+                        khách
                       </span>
                     </div>
-                    <h5>Description</h5>
+                    <h5>Mô tả</h5>
                     <p>{desc}</p>
                   </div>
 
                   {/* ---------------- tour reviews section start ---------------- */}
                   <div className="tour__reviews mt-4">
-                    <h4>Reviews ({reviews?.length} reviews)</h4>
+                    <h4>Nhận xét ({reviews?.length} reviews)</h4>
 
                     <Form onSubmit={submitHandler}>
                       <div className="d-flex align-items-center gap-3 mb-4 rating__group">
@@ -164,14 +165,14 @@ const TourDetails = () => {
                         <input
                           type="text"
                           ref={reviewMsgRef}
-                          placeholder="share your thoughts"
+                          placeholder="Chia sẻ cảm nhận của bạn!"
                           required
                         />
                         <button
                           className="btn primary__btn text-white"
                           type="submit"
                         >
-                          Submit
+                          Gửi
                         </button>
                       </div>
                     </Form>

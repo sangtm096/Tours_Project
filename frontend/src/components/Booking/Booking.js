@@ -38,7 +38,7 @@ const Booking = ({ tour, avgRating }) => {
     console.log(booking);
     try {
       if (!user || user === undefined || user === null) {
-        return alert("Please sign in");
+        return alert("Vui lòng đăng nhập!");
       }
 
       const res = await fetch(`${BASE_URL}/booking`, {
@@ -65,7 +65,7 @@ const Booking = ({ tour, avgRating }) => {
     <div className="booking">
       <div className="booking__top d-flex align-items-center justify-content-between">
         <h3>
-          ${price} <span>/per person</span>
+          ${price} <span>/1 du khách</span>
         </h3>
         <span className="tour__rating d-flex align-items-center">
           <i className="ri-star-fill"></i>
@@ -75,12 +75,12 @@ const Booking = ({ tour, avgRating }) => {
 
       {/* ---------------- booking form start ------------------ */}
       <div className="booking__form">
-        <h5>Infomation</h5>
+        <h5>Thông tin đặt tours</h5>
         <Form className="booking__info-form" onSubmit={handleClick}>
           <FormGroup>
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Họ và tên"
               id="fullName"
               required
               onChange={handleChange}
@@ -89,7 +89,7 @@ const Booking = ({ tour, avgRating }) => {
           <FormGroup>
             <input
               type="text"
-              placeholder="Phone"
+              placeholder="Số điện thoại"
               id="phone"
               required
               onChange={handleChange}
@@ -105,7 +105,7 @@ const Booking = ({ tour, avgRating }) => {
             />
             <input
               type="number"
-              placeholder="Guest"
+              placeholder="Số du khách"
               id="guestSize"
               required
               onChange={handleChange}
@@ -121,16 +121,16 @@ const Booking = ({ tour, avgRating }) => {
         <ListGroup>
           <ListGroupItem className="border-0 px-0">
             <h5 className="d-flex align-items-center gap-1">
-              ${price} <i className="ri-close-line"></i> 1 person{" "}
+              ${price} <i className="ri-close-line"></i> 1 du khách{" "}
             </h5>
             <span> ${price}</span>
           </ListGroupItem>
           <ListGroupItem className="border-0 px-0">
-            <h5>Service charge</h5>
+            <h5>Phí dịch vụ</h5>
             <span> ${serviceFee}</span>
           </ListGroupItem>
           <ListGroupItem className="border-0 px-0 total">
-            <h5>Total</h5>
+            <h5>Tổng</h5>
             <span> ${totalAmount}</span>
           </ListGroupItem>
         </ListGroup>
